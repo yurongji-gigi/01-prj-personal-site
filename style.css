@@ -1,1 +1,124 @@
-/* Add you CSS here */
+:root {
+	--ink: #171918;
+	--muted: #707074;
+	--line: #d7d7d9;
+	--paper: #f7f8f6;
+	--accent: #eadcdd;
+	--blush: #b99396;
+	--display: Georgia, "Times New Roman", serif;
+	--body: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; color: var(--ink); background: var(--paper); font-family: var(--body); font-size: 16px; line-height: 1.6; }
+a { color: inherit; }
+.site-header { align-items: center; background: rgba(248, 248, 247, .96); border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; margin: 0 auto; max-width: 1240px; padding: 28px 40px; position: relative; z-index: 2; }
+.wordmark { font-size: 20px; font-weight: bold; letter-spacing: .08em; text-decoration: none; }
+.wordmark span, .eyebrow, .date, .section-number, .project-label { color: var(--blush); }
+nav { display: flex; gap: 28px; }
+nav a { font-size: 11px; letter-spacing: .08em; text-decoration: none; text-transform: uppercase; }
+nav a:hover, .contact-links a:hover { color: var(--blush); }
+.page-section { margin: 0 auto; max-width: 1240px; padding: 120px 40px; }
+.hero { min-height: 700px; padding-bottom: 105px; padding-top: 125px; position: relative; }
+.hero-copy { max-width: 760px; }
+.eyebrow, .section-number, .date, .project-label { font-size: 11px; font-weight: bold; letter-spacing: .16em; text-transform: uppercase; }
+h1, h2, h3, p { margin-top: 0; }
+h1, h2 { font-family: var(--display); font-weight: normal; letter-spacing: -.04em; line-height: .98; }
+h1 { font-size: clamp(64px, 10vw, 142px); margin: 25px 0 20px; }
+h2 { font-size: clamp(48px, 6vw, 82px); margin-bottom: 42px; }
+em { color: var(--blush); font-style: italic; }
+.hero-title { font-size: 14px; letter-spacing: .18em; text-transform: uppercase; }
+.intro { font-family: var(--display); font-size: 22px; line-height: 1.35; margin: 38px 0; max-width: 480px; }
+.button { border: 1px solid var(--ink); display: inline-block; font-size: 12px; letter-spacing: .1em; padding: 13px 18px; text-decoration: none; text-transform: uppercase; }
+.button span, .contact-links span { font-size: 17px; margin-left: 20px; }
+.button:hover { background: var(--ink); color: var(--paper); }
+.hero-note { border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; line-height: 1.45; margin-top: 75px; padding-top: 16px; width: 180px; }
+.cross-mark { color: var(--blush); display: block; font-size: 34px; font-weight: 200; line-height: .8; margin-bottom: 20px; }
+.image-slot { align-items: center; background: linear-gradient(135deg, #ececee, #c7c7ca 48%, #f4f4f3 52%, #dedee0); border: 1px solid #b5b5b8; color: #68686c; display: flex; justify-content: center; letter-spacing: .12em; text-align: center; text-transform: uppercase; }
+.image-slot span { font-size: 11px; }
+.image-slot small { color: #89898d; font-size: 9px; letter-spacing: .1em; }
+.hero-image { height: 490px; position: absolute; right: 40px; top: 95px; width: 33%; }
+.hero-image { background-image: url("img/portrait.jpg"), linear-gradient(135deg, #ececee, #c7c7ca 48%, #f4f4f3 52%, #dedee0); background-position: center; background-size: cover; }
+.hero-image::before, .clinical-image::before, .vr-image::before { border: 1px solid rgba(255, 255, 255, .8); content: ""; height: calc(100% - 24px); position: absolute; width: calc(100% - 24px); }
+.hero-image span, .clinical-image span, .vr-image span { display: none; }
+.split-section { display: flex; gap: 10%; }
+.section-number { flex: 0 0 25%; margin-top: 8px; }
+.section-content { max-width: 680px; }
+.large-copy { font-family: var(--display); font-size: 25px; line-height: 1.3; margin-bottom: 30px; }
+.section-content > p:not(.large-copy) { color: var(--muted); max-width: 560px; }
+.bordered-section { border-top: 1px solid var(--line); }
+.timeline { border-top: 1px solid var(--line); margin-top: 58px; }
+.timeline-item { border-bottom: 1px solid var(--line); padding: 28px 0 32px 38px; position: relative; }
+.timeline-item::before { background: var(--blush); border: 4px solid var(--paper); border-radius: 50%; content: ""; height: 9px; left: -7px; position: absolute; top: 32px; width: 9px; }
+.timeline h3, .education-item h3, .skill-group h3 { font-size: 20px; margin-bottom: 2px; }
+.role { color: var(--muted); font-size: 14px; margin-bottom: 15px; }
+.timeline-item > p:last-child { color: var(--muted); font-size: 14px; margin-bottom: 0; max-width: 560px; }
+.experience-images { display: flex; gap: 18px; margin-top: 50px; }
+.clinical-image { height: 185px; width: 58%; }
+.vr-image { height: 185px; width: 42%; }
+.clinical-image { background-image: url("img/internship.jpg"), linear-gradient(135deg, #ececee, #c7c7ca 48%, #f4f4f3 52%, #dedee0); background-position: center; background-size: cover; }
+.vr-image { background-image: url("img/doctor.jpg"), linear-gradient(135deg, #ececee, #c7c7ca 48%, #f4f4f3 52%, #dedee0); background-position: center; background-size: cover; }
+.project-section { padding-top: 135px; }
+.project-heading { align-items: flex-start; display: flex; justify-content: space-between; }
+.project-index { color: var(--muted); font-family: var(--display); font-size: 52px; line-height: .8; }
+.project-panel { background: linear-gradient(115deg, #e9e9ea, #d2d2d4 50%, #f2eeee); margin-top: 35px; padding: 75px 8%; position: relative; }
+.project-panel::after { border: 1px solid rgba(116, 116, 120, .5); content: ""; height: calc(100% - 42px); pointer-events: none; position: absolute; right: 21px; top: 21px; width: calc(100% - 42px); }
+.project-panel > * { position: relative; z-index: 1; }
+.project-panel h2 { font-size: clamp(55px, 8vw, 110px); margin: 28px 0 10px; }
+.project-name { font-family: var(--display); font-size: 21px; }
+.project-description { font-size: 18px; line-height: 1.45; margin: 45px 0; max-width: 520px; }
+.project-image { margin: 50px 0 45px; position: relative; }
+.project-image img { border: 1px solid rgba(116, 116, 120, .7); display: block; height: auto; max-width: 100%; padding: 7px; width: 100%; }
+.project-image figcaption { color: #67676c; font-size: 10px; letter-spacing: .12em; margin-top: 12px; text-transform: uppercase; }
+.project-footer { border-top: 1px solid rgba(23, 25, 24, .3); display: flex; gap: 100px; padding-top: 22px; }
+.project-footer p { font-size: 13px; line-height: 1.55; margin-bottom: 0; }
+.project-footer strong { font-size: 10px; letter-spacing: .14em; text-transform: uppercase; }
+.skills-list { display: flex; flex-wrap: wrap; gap: 45px 10%; }
+.skill-group { border-top: 1px solid var(--line); padding-top: 18px; width: 42%; }
+.skill-icon { color: var(--blush); font-size: 18px; margin-bottom: 22px; }
+.skill-group h3 { font-size: 15px; line-height: 1.3; margin-bottom: 15px; }
+.skill-group p, .education-item p:last-child { color: var(--muted); font-size: 14px; line-height: 1.6; }
+.education-section { padding-bottom: 145px; }
+.education-list { display: flex; gap: 10%; }
+.education-item { border-top: 1px solid var(--line); padding-top: 18px; width: 45%; }
+.education-item h3 { font-size: 19px; margin: 18px 0 4px; }
+.education-item p:last-child { margin-bottom: 0; }
+.contact-section { background: var(--ink); color: var(--paper); }
+.contact-inner { margin: 0 auto; max-width: 1240px; padding: 105px 40px 35px; }
+.contact-inner .section-number { color: var(--accent); }
+.contact-inner h2 { font-size: clamp(56px, 8vw, 110px); margin: 70px 0 35px; }
+.contact-inner h2 em { color: var(--accent); }
+.contact-copy { color: #bdbdc1; max-width: 390px; }
+.contact-links { display: flex; gap: 35px; margin-top: 55px; }
+.contact-links a { border-bottom: 1px solid #77777c; font-size: 13px; letter-spacing: .1em; padding-bottom: 10px; text-decoration: none; text-transform: uppercase; }
+.copyright { color: #85858a; font-size: 11px; margin: 105px 0 0; }
+@media (max-width: 700px) {
+	.site-header, .page-section, .contact-inner { padding-left: 22px; padding-right: 22px; }
+	.site-header { padding-bottom: 22px; padding-top: 22px; }
+	nav { gap: 8px 14px; justify-content: flex-end; max-width: 245px; }
+	nav a { font-size: 10px; }
+	.hero { align-items: flex-start; display: block; min-height: 0; padding-bottom: 90px; padding-top: 95px; }
+	h1 { font-size: 18vw; }
+	.hero-image { height: 330px; margin-top: 55px; position: relative; right: auto; top: auto; width: 100%; }
+	.hero-note { margin-top: 75px; }
+	.split-section { display: block; padding-bottom: 90px; padding-top: 90px; }
+	.section-number { margin-bottom: 42px; }
+	h2 { margin-bottom: 32px; }
+	.large-copy { font-size: 21px; }
+	.experience-images { display: block; }
+	.clinical-image, .vr-image { margin-bottom: 18px; width: 100%; }
+	.project-section { padding-bottom: 90px; padding-top: 90px; }
+	.project-panel { margin-left: -22px; margin-right: -22px; padding: 58px 35px; }
+	.project-panel::after { height: calc(100% - 30px); right: 15px; top: 15px; width: calc(100% - 30px); }
+	.project-description { font-size: 16px; margin: 35px 0; }
+	.project-footer { display: block; }
+	.project-footer p + p { margin-top: 25px; }
+	.skills-list, .education-list { display: block; }
+	.skill-group, .education-item { margin-bottom: 35px; width: 100%; }
+	.education-section { padding-bottom: 110px; }
+	.contact-inner { padding-bottom: 28px; padding-top: 85px; }
+	.contact-inner h2 { margin-top: 55px; }
+	.contact-links { display: block; }
+	.contact-links a { display: table; margin-bottom: 22px; }
+	.copyright { margin-top: 80px; }
+}

@@ -2,10 +2,141 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Personal Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Yurong Gigi Ji is a neuroscience student exploring mental health, neuromodulation, and healthcare technology.">
+  <title>Yurong Ji -- Gigi | Neuroscience Student</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome provides simple, professional icons without JavaScript. -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-  <!-- Add your HTML content here -->
+  <!-- The header stays simple so visitors can move through the page quickly. -->
+  <header class="site-header">
+    <a class="wordmark" href="#top">YJ<span>.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#top">Home</a>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#work">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- Hero section: the first thing a visitor sees. -->
+    <section class="hero page-section" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Neuropsychiatry · Neuromodulation · Digital Mental Health</p>
+        <h1 id="hero-title">Yurong <em>"Gigi"</em> Ji</h1>
+        <p class="hero-title">Neuroscience Student</p>
+        <p class="intro">Exploring the space where neuropsychiatry, neuromodulation, and thoughtful technology meet.</p>
+        <a class="button" href="#work">View My Work <span aria-hidden="true">&#8599;</span></a>
+      </div>
+      <div class="hero-note" aria-label="Current focus">
+        <span class="cross-mark" aria-hidden="true">+</span>
+        <p>Currently studying the brain<br>and designing better care.</p>
+      </div>
+      <!-- Add your portrait as img/portrait.jpg when ready. -->
+      <div class="hero-image image-slot" role="img" aria-label="Portrait placeholder">
+        <span>Portrait<br><small>image to come</small></span>
+      </div>
+    </section>
+
+    <section id="about" class="page-section split-section" aria-labelledby="about-title">
+      <p class="section-number">01 / Profile</p>
+      <div class="section-content">
+        <h2 id="about-title">Curious about<br><em>better care.</em></h2>
+        <p class="large-copy">I am a neuroscience student at Arizona State University interested in how emerging tools can make mental health care more precise, accessible, and human.</p>
+        <p>My academic interests include neuropsychiatry, non-invasive neuromodulation, and digital therapeutics involving virtual reality and artificial intelligence. I enjoy moving between clinical questions, research methods, and the practical details of building a useful product.</p>
+      </div>
+    </section>
+
+    <section id="experience" class="page-section split-section bordered-section" aria-labelledby="experience-title">
+      <p class="section-number">02 / Experience</p>
+      <div class="section-content">
+        <h2 id="experience-title">Learning from<br><em>clinical context.</em></h2>
+        <div class="timeline">
+          <article class="timeline-item">
+            <p class="date">Clinical observation · Research</p>
+            <h3>Quzhou Third Hospital</h3>
+            <p class="role">Clinical Observation Intern &amp; Student Researcher</p>
+            <p>Tertiary psychiatric hospital in Quzhou, China. Observed clinical practice and developed a grounded understanding of psychiatric care and research.</p>
+          </article>
+          <article class="timeline-item">
+            <p class="date">Academic participation</p>
+            <h3>Barrow Neurological Institute</h3>
+            <p class="role">Academic Participant</p>
+            <p>Phoenix, Arizona. Engaged with a leading neurological research environment and expanded my perspective on brain health.</p>
+          </article>
+        </div>
+        <!-- These two spaces are ready for your clinical and research photographs. -->
+        <div class="experience-images">
+          <div class="image-slot clinical-image"><span>Clinical observation<br><small>image to come</small></span></div>
+          <div class="image-slot vr-image"><span>Research in practice<br><small>image to come</small></span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The project panel is intentionally larger: it is the portfolio's main case study. -->
+    <section id="work" class="page-section project-section" aria-labelledby="work-title">
+      <div class="project-heading">
+        <p class="section-number">03 / Selected work</p>
+        <p class="project-index">01</p>
+      </div>
+      <div class="project-panel">
+        <div class="project-label">Clinical mental health workflow platform</div>
+        <h2 id="work-title">Anxin Healthcare<br><em>System</em></h2>
+        <p class="project-name">安心 · Ur NeuroMate</p>
+        <p class="project-description">A clinical mental health workflow platform that brings patient-facing conversational interaction together with clinician and therapist workstations.</p>
+          <figure class="project-image">
+            <img src="img/Anxin.png" alt="Anxin Healthcare System project overview">
+            <figcaption>Anxin Healthcare System · Product overview</figcaption>
+          </figure>
+        <div class="project-footer">
+          <p><strong>Role</strong><br>Lead Developer &amp; Product Architect</p>
+          <p><strong>Focus</strong><br>Digital phenotyping · Clinical workflow design<br>AI-assisted prototyping · UI/UX development</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="page-section split-section bordered-section" aria-labelledby="skills-title">
+      <p class="section-number">04 / Capabilities</p>
+      <div class="section-content">
+        <h2 id="skills-title">Tools for<br><em>the work.</em></h2>
+        <div class="skills-list">
+          <div class="skill-group"><i class="fa-solid fa-microchip skill-icon" aria-hidden="true"></i><h3>AI &amp; Technical Prototyping</h3><p>AI-assisted workflows<br>Rapid product prototyping<br>Digital phenotyping concepts</p></div>
+          <div class="skill-group"><i class="fa-solid fa-code skill-icon" aria-hidden="true"></i><h3>Web Development</h3><p>HTML &amp; CSS<br>UI/UX development<br>Clinical workflow design</p></div>
+          <div class="skill-group"><i class="fa-solid fa-stethoscope skill-icon" aria-hidden="true"></i><h3>Clinical &amp; Research Methodologies</h3><p>Clinical observation<br>Literature review<br>Research communication</p></div>
+          <div class="skill-group"><i class="fa-solid fa-language skill-icon" aria-hidden="true"></i><h3>Languages</h3><p>English<br>Mandarin Chinese</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section split-section education-section" aria-labelledby="education-title">
+      <p class="section-number">05 / Education</p>
+      <div class="section-content">
+        <h2 id="education-title">Building a<br><em>strong foundation.</em></h2>
+        <div class="education-list">
+          <div class="education-item"><p class="date">Expected May 2029</p><h3>Arizona State University</h3><p>Bachelor of Science in Neuroscience</p></div>
+          <div class="education-item"><p class="date">April 2025</p><h3>Urban International School</h3><p>High School Diploma</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="contact-section" aria-labelledby="contact-title">
+    <div class="contact-inner">
+      <p class="section-number">06 / Contact</p>
+      <h2 id="contact-title">Let's explore<br><em>what's next.</em></h2>
+      <p class="contact-copy">For conversations about neuroscience, mental health technology, or potential collaboration.</p>
+      <!-- Replace these two destinations with your preferred contact details. -->
+      <div class="contact-links">
+        <a href="mailto:yurong.ji@asu.edu">Email me <span aria-hidden="true">&#8599;</span></a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">&#8599;</span></a>
+      </div>
+      <p class="copyright">© 2026 Yurong "Gigi" Ji</p>
+    </div>
+  </footer>
 </body>
 </html>

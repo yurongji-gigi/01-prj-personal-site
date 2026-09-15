@@ -6,6 +6,9 @@
   <meta name="description" content="Yurong Gigi Ji is a neuroscience student exploring mental health, neuromodulation, and healthcare technology.">
   <title>Yurong Ji -- Gigi | Neuroscience Student</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <!-- Font Awesome provides simple, professional icons without JavaScript. -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -13,14 +16,17 @@
   <!-- The header stays simple so visitors can move through the page quickly. -->
   <header class="site-header">
     <a class="wordmark" href="#top">YJ<span>.</span></a>
-    <nav aria-label="Main navigation">
-      <a href="#top">Home</a>
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#work">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <details class="menu" open>
+      <summary>Menu</summary>
+      <nav aria-label="Main navigation">
+        <a href="#top">Home</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#work">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </details>
   </header>
 
   <main id="top">
@@ -37,13 +43,12 @@
         <span class="cross-mark" aria-hidden="true">+</span>
         <p>Currently studying the brain<br>and designing better care.</p>
       </div>
-      <!-- Add your portrait as img/portrait.jpg when ready. -->
-      <div class="hero-image image-slot" role="img" aria-label="Portrait placeholder">
-        <span>Portrait<br><small>image to come</small></span>
+      <div class="hero-image">
+        <img src="img/Hero.png" alt="Yurong Gigi Ji standing outdoors in Arizona">
       </div>
     </section>
 
-    <section id="about" class="page-section split-section" aria-labelledby="about-title">
+    <section id="about" class="page-section split-section" aria-labelledby="about-title" data-reveal>
       <p class="section-number">01 / Profile</p>
       <div class="section-content">
         <h2 id="about-title">Curious about<br><em>better care.</em></h2>
@@ -52,7 +57,7 @@
       </div>
     </section>
 
-    <section id="experience" class="page-section split-section bordered-section" aria-labelledby="experience-title">
+    <section id="experience" class="page-section split-section bordered-section" aria-labelledby="experience-title" data-reveal>
       <p class="section-number">02 / Experience</p>
       <div class="section-content">
         <h2 id="experience-title">Learning from<br><em>clinical context.</em></h2>
@@ -70,10 +75,15 @@
             <p>Phoenix, Arizona. Engaged with a leading neurological research environment and expanded my perspective on brain health.</p>
           </article>
         </div>
-        <!-- These two spaces are ready for your clinical and research photographs. -->
         <div class="experience-images">
-          <div class="image-slot clinical-image"><span>Clinical observation<br><small>image to come</small></span></div>
-          <div class="image-slot vr-image"><span>Research in practice<br><small>image to come</small></span></div>
+          <figure class="clinical-image">
+            <img src="img/internship.jpg" alt="Clinical internship observation in a hospital setting">
+            <figcaption>Clinical observation · Quzhou Third Hospital</figcaption>
+          </figure>
+          <figure class="vr-image">
+            <img src="img/doctor.jpg" alt="Healthcare team in a hospital setting">
+            <figcaption>Healthcare environment · Clinical learning</figcaption>
+          </figure>
         </div>
       </div>
     </section>
@@ -100,7 +110,7 @@
       </div>
     </section>
 
-    <section id="skills" class="page-section split-section bordered-section" aria-labelledby="skills-title">
+    <section id="skills" class="page-section split-section bordered-section" aria-labelledby="skills-title" data-reveal>
       <p class="section-number">04 / Capabilities</p>
       <div class="section-content">
         <h2 id="skills-title">Tools for<br><em>the work.</em></h2>
@@ -113,7 +123,7 @@
       </div>
     </section>
 
-    <section class="page-section split-section education-section" aria-labelledby="education-title">
+    <section class="page-section split-section education-section" aria-labelledby="education-title" data-reveal>
       <p class="section-number">05 / Education</p>
       <div class="section-content">
         <h2 id="education-title">Building a<br><em>strong foundation.</em></h2>
@@ -125,7 +135,7 @@
     </section>
   </main>
 
-  <footer id="contact" class="contact-section" aria-labelledby="contact-title">
+  <footer id="contact" class="contact-section" aria-labelledby="contact-title" data-reveal>
     <div class="contact-inner">
       <p class="section-number">06 / Contact</p>
       <h2 id="contact-title">Let's explore<br><em>what's next.</em></h2>
@@ -133,10 +143,11 @@
       <!-- Replace these two destinations with your preferred contact details. -->
       <div class="contact-links">
         <a href="mailto:yurong.ji@asu.edu">Email me <span aria-hidden="true">&#8599;</span></a>
-        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">&#8599;</span></a>
+        <a href="https://www.linkedin.com/in/yurong-ji-98aab1352/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">&#8599;</span></a>
       </div>
       <p class="copyright">© 2026 Yurong "Gigi" Ji</p>
     </div>
   </footer>
+  <script src="script.js" defer></script>
 </body>
 </html>
